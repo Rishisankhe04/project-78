@@ -3,7 +3,7 @@ var names=["Family Book","Ranbir Singh","Diljeet Singh","Rocky Singh","Alia Sing
 var i=0;
 function update(){
     var member_in_array=5;
-    if(i=0) i<member_in_array; i++; {
+   for(i=0; i<member_in_array; i++) {
       var updatedImage=images[i];
       var updatedName=names[i];
         document.getElementById("family_image").src=updatedImage;
