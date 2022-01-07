@@ -2,12 +2,10 @@ var images=["https://i.postimg.cc/MGn9GJXw/family.jpg","https://i.postimg.cc/qqy
 var names=["Family Book","Ranbir Singh","Diljeet Singh","Rocky Singh","Alia Singh","Soni Singh"];
 var i=0;
 function update(){
-    var member_in_array=5;
-   for(i=0; i<member_in_array; i++) {
-      var updatedImage=images[i];
-      var updatedName=names[i];
-        document.getElementById("family_image").src=updatedImage;
-        document.getElementById("family_name").innerHTML=updatedName;
-      }
-
+        document.getElementById("family_image").src=images[i];
+        document.getElementById("family_name").innerHTML=names[i];
+        i++;
+        if(i>5){
+          i=0;
+        }
 }
